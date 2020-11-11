@@ -11,10 +11,7 @@ class HYHomeContent extends StatelessWidget {
       builder: (ctx, snapshot) {
         if (!snapshot.hasData)
           return Center(child: CircularProgressIndicator());
-        // if (snapshot.error)
-        //   return Center(
-        //     child: Text("请求失败"),
-        //   );
+        if (snapshot.error != null) return Center(child: Text("请求失败"));
         final categories = snapshot.data;
         return GridView.builder(
           padding: EdgeInsets.all(20),
