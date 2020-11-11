@@ -1,18 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:learn_flutter/core/model/meal_model.dart';
 import 'package:learn_flutter/core/services/meal_request.dart';
 
-class HYMealViewModel extends ChangeNotifier {
-  List<HYMealModel> _meals = [];
+import 'base_view_model.dart';
 
-  List<HYMealModel> get meals {
-    return _meals;
-  }
-
+class HYMealViewModel extends BaseMealViewModel {
   HYMealViewModel() {
     HYMealRequest.getMealData().then((res) {
-      _meals = res;
-      notifyListeners();
+      meals = res;
     });
   }
 }

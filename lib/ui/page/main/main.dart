@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/ui/page/home/home_drawer.dart';
 import 'package:learn_flutter/ui/page/main/initialize_items.dart';
 
 import 'initialize_items.dart';
@@ -16,6 +17,7 @@ class _HYMainScreenState extends State<HYMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: HYHomeDrawer(),
       body: IndexedStack(
         index: _currentIndex,
         children: pages,

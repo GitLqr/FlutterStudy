@@ -11,7 +11,7 @@ class HYHomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: HYHomeAppBar(context),
       body: HYHomeContent(),
-      drawer: HYHomeDrawer(),
+      // drawer: HYHomeDrawer(),
     );
   }
 }
