@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:learn_flutter/ui/page/favor/favor.dart';
+import 'package:learn_flutter/ui/page/home/home.dart';
 
-final List<Widget> pages = [];
+final List<Widget> pages = [
+  HYHomeScreen(),
+  HYFavorScreen(),
+];
 final List<BottomNavigationBarItem> items = [
   BottomNavigationBarItem(
     label: "首页",

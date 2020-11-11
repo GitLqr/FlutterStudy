@@ -13,10 +13,10 @@ class HYAppTheme {
     primarySwatch: Colors.pink,
     canvasColor: Color.fromRGBO(255, 254, 222, 1),
     textTheme: TextTheme(
-      body1: TextStyle(fontSize: bodyFontSize),
-      display1: TextStyle(fontSize: smallFontSize),
-      display2: TextStyle(fontSize: normalFontSize),
-      display3: TextStyle(fontSize: largeFontSize),
+      body1: TextStyle(fontSize: bodyFontSize, color: Colors.black87),
+      display1: TextStyle(fontSize: smallFontSize, color: Colors.black87),
+      display2: TextStyle(fontSize: normalFontSize, color: Colors.black87),
+      display3: TextStyle(fontSize: largeFontSize, color: Colors.black87),
     ),
   );
 
